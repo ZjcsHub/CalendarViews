@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CalendarCell" customModule="OplayerSport" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="97" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="97" height="69"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="July" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kRZ-JX-yq5">
+                        <rect key="frame" x="0.0" y="52" width="97" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNy-d1-zJm">
+                        <rect key="frame" x="0.0" y="0.0" width="97" height="30"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGv-6p-YE1">
+                        <rect key="frame" x="0.0" y="30" width="97" height="17"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="kRZ-JX-yq5" firstAttribute="top" secondItem="mGv-6p-YE1" secondAttribute="bottom" constant="5" id="H9O-3u-vVM"/>
+                <constraint firstItem="kRZ-JX-yq5" firstAttribute="height" secondItem="mGv-6p-YE1" secondAttribute="height" id="Hrn-5O-LuN"/>
+                <constraint firstItem="kRZ-JX-yq5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="IRb-zx-Itf"/>
+                <constraint firstItem="kRZ-JX-yq5" firstAttribute="centerX" secondItem="mGv-6p-YE1" secondAttribute="centerX" id="J02-Jp-x0I"/>
+                <constraint firstItem="kRZ-JX-yq5" firstAttribute="width" secondItem="mGv-6p-YE1" secondAttribute="width" id="Jdn-Ur-sbF"/>
+                <constraint firstItem="PNy-d1-zJm" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="NRs-Zj-Efn"/>
+                <constraint firstItem="mGv-6p-YE1" firstAttribute="top" secondItem="PNy-d1-zJm" secondAttribute="bottom" id="O7f-Tr-gSN"/>
+                <constraint firstAttribute="trailing" secondItem="PNy-d1-zJm" secondAttribute="trailing" id="f27-Z7-DVP"/>
+                <constraint firstItem="mGv-6p-YE1" firstAttribute="height" secondItem="PNy-d1-zJm" secondAttribute="height" multiplier="4:7" id="fQN-w6-Gy3"/>
+                <constraint firstItem="PNy-d1-zJm" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jSD-ln-F2Y"/>
+                <constraint firstAttribute="trailing" secondItem="kRZ-JX-yq5" secondAttribute="trailing" id="wbn-qE-nT4"/>
+                <constraint firstAttribute="bottom" secondItem="kRZ-JX-yq5" secondAttribute="bottom" id="xuU-6f-ALp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="97" height="73"/>
+            <connections>
+                <outlet property="dayLabel" destination="PNy-d1-zJm" id="BOl-8h-s3x"/>
+                <outlet property="monthLabel" destination="kRZ-JX-yq5" id="pRR-SA-YAf"/>
+                <outlet property="weekendLabel" destination="mGv-6p-YE1" id="6J5-yQ-U56"/>
+            </connections>
+            <point key="canvasLocation" x="74.637681159420296" y="79.352678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
